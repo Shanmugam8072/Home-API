@@ -1,0 +1,43 @@
+<div class="header">
+    <nav>
+        <ul>
+            <li>Home</li>
+        </ul>
+        <ul id="log">
+            <li>Login</li>
+        </ul>
+        <ul id="reg">
+            <li>Register</li>
+        </ul>
+    </nav>
+</div>
+<div *ngIf="data">
+    <h2>Data from API:</h2>
+    <table class="custom-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Username</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Website</th>
+                <th>Address</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of data">
+                <td>{{ user.id }}</td>
+                <td>{{ user.name }}</td>
+                <td>{{ user.username }}</td>
+                <td>{{ user.email }}</td>
+                <td>{{ user.phone }}</td>
+                <td>{{ user.website }}</td>
+                <td>
+                    {{ user.address.street }}, {{ user.address.suite }},<br>
+                    {{ user.address.city }}, {{ user.address.zipcode }}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
