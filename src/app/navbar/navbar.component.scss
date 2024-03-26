@@ -1,0 +1,32 @@
+.header{
+    background-color: black;
+    color: white;
+    padding: 20px;
+   
+}
+ul,li,nav{
+    display: inline;
+
+}
+
+
+#log{
+    margin-left: 70%;
+    padding-left: 2%;
+}
+#reg{
+    margin-left: 2%;
+   padding-top: 20px;
+}
+
+li a {
+    
+    cursor: pointer;
+    color: white;
+    text-decoration: none; 
+
+    
+}
+li:hover a {
+    color: gray;
+}

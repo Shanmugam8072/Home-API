@@ -1,43 +1,39 @@
-<div class="header">
-    <nav>
-        <ul>
-            <li>Home</li>
-        </ul>
-        <ul id="log">
-            <li>Login</li>
-        </ul>
-        <ul id="reg">
-            <li>Register</li>
-        </ul>
-    </nav>
-</div>
+
 <div *ngIf="data">
-    <h2>Data from API:</h2>
+        <h2>EMPLOYEE DETAILS</h2>
     <table class="custom-table">
         <thead>
             <tr>
-                <th>ID</th>
-                <th>Name</th>
-                <th>Username</th>
-                <th>Email</th>
-                <th>Phone</th>
-                <th>Website</th>
-                <th>Address</th>
+                <th>EMP-ID</th>
+                <th>EMP-NAME</th>
+                <th>EMP-ROLE</th>
+                <th>EMP-EMAIL</th>
+                <th>EMP-AGE</th>
+                <th>EMP-SALARY</th>
+                <th>EMP-ADDRESS</th>
+                <th id="UD">UPDATE</th>
+                <th id="UD">DELETE</th>
             </tr>
         </thead>
         <tbody>
             <tr *ngFor="let user of data">
-                <td>{{ user.id }}</td>
-                <td>{{ user.name }}</td>
-                <td>{{ user.username }}</td>
-                <td>{{ user.email }}</td>
-                <td>{{ user.phone }}</td>
-                <td>{{ user.website }}</td>
+                <td>{{ user.empId }}</td>
+                <td>{{ user.empName }}</td>
+                <td>{{ user.empRole }}</td>
+                <td>{{ user.empEmail }}</td>
+                <td>{{ user.empAge }}</td>
+                <td>{{ user.empSalary }}</td>
                 <td>
-                    {{ user.address.street }}, {{ user.address.suite }},<br>
-                    {{ user.address.city }}, {{ user.address.zipcode }}
+                    {{ user.empAddress }}
                 </td>
+                <td ><button  id="up"><a routerLink="/update">update</a></button></td>
+                <td><button id="up"><a routerLink="/delete">delete</a></button></td>
+              
             </tr>
         </tbody>
     </table>
+</div>
+
+<div >
+    <button id="addbtn"><a routerLink="/add">Add+</a></button>
 </div>

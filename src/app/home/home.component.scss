@@ -1,35 +1,8 @@
-.header{
-    background-color: black;
-    color: white;
-    padding: 20px;
-   
-}
-ul,li,nav{
-    display: inline;
 
-}
-
-
-#log{
-    margin-left: 70%;
-    padding-left: 2%;
-}
-#reg{
-    margin-left: 2%;
-   padding-top: 20px;
-}
-
-li{
-    
-    cursor: pointer;
-    
-}
-li:hover{
-    color: greenyellow;
-}
 .custom-table {
     width: 100%;
     border-collapse: collapse;
+    padding: 20px;
 }
 
 .custom-table th, .custom-table td {
@@ -48,4 +21,40 @@ li:hover{
 
 .custom-table tbody tr:hover {
     background-color: #ddd;
+}
+#addbtn{
+    width: 150px;
+    height: 40px;
+    margin-left: 45%;
+   margin-top: 20px;
+   color: white;
+   
+    
+}
+
+#addbtn a {
+    color: white; /* Set anchor tag font color to white */
+    text-decoration: none; /* Remove underline from anchor tag */
+}
+button  {
+    width: 60px;
+    height: 30px;
+    background-color: black;
+   color: white;
+   border-radius: 10px;
+   text-decoration: none;
+
+}
+h2{
+    text-align: center;
+}
+#UD{
+    width: 90px;
+    text-align: center;
+
+}
+#up a {
+   
+   color: white;
+    text-decoration: none; 
 }
